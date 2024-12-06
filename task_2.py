@@ -61,5 +61,29 @@ if len(numbers) == 5:
     print("Число, утворене об'єднанням елементів нового списку:", reversed_number_str)
 else:
     print("Помилка: Ви повинні ввести рівно 5 цифр, розділених пробілами.")
-
     
+
+professions = ["Doctor", "Engineer", "Teacher", "Artist", "Scientist", "Writer"]
+
+print("Початковий список:", professions)
+sorted_professions = sorted(professions)
+print("\nСписок після застосування sorted():", sorted_professions)
+print("Початковий список залишається незмінним:", professions)
+professions.reverse()
+print("\nСписок після застосування reverse():", professions)
+professions.reverse()  # Розгортаємо назад для точності
+print("\nСписок повернено до початкового порядку:", professions)
+professions.sort()
+print("\nСписок після застосування sort():", professions)
+
+keywords = ('for', 'if', 'else', 'in', ':')
+
+# Візуалізація структури коду
+print(f"{keywords[0]} each token {keywords[3]} the postfix expression {keywords[4]}")
+print(f"    {keywords[1]} the token is a number {keywords[4]}")
+print("        print('Convert it to an integer and add it to the end of values')")
+print(f"    {keywords[2]}")
+print("        print('Append the result to the end of values')")
+
+
+input("\nНатисніть Enter, щоб завершити програму...")
